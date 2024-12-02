@@ -1,0 +1,124 @@
+/* 헤더와 네비게이션 전체를 화면 가득 채우도록 수정 */
+.Header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100vw; /* 너비를 화면 전체로 설정 */
+    margin: 0;
+}
+
+/* 헤더 상단: 로고, 검색창, 로그인/회원가입 버튼 배치 */
+.Header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    height: 8vh; /* 헤더 영역 높이 줄이기 */
+    box-sizing: border-box; /* 패딩 포함 */
+}
+
+/* 로고 이미지 */
+.Header_logo {
+    height: 50px; /* 로고 크기 조정 */
+}
+
+/* 검색창 */
+.Header_center_search {
+    display: flex;
+    align-items: center;
+    background-color: papayawhip;
+    border-radius: 30px;
+    padding: 0 10px;
+    width: 30%; /* 검색창 너비를 2/3로 줄이기 */
+    height: 40px; /* 검색창 높이 조정 */
+    box-sizing: border-box; /* 패딩 포함 */
+}
+
+.Header_center_search input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.Header_center_search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header_center_search button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 로그인/회원가입 버튼 */
+.Header_right {
+    display: flex;
+    gap: 15px;
+}
+
+.Header_button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.Header_button:hover {
+    color: mediumseagreen;
+}
+
+/* 네비게이션 바 */
+.Header_nav {
+    display: flex;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    background-color: black;
+    height: 5vh; /* 네비게이션 높이 설정 */
+    padding: 0 20px; /* 좌우 여백 추가 */
+    width: 100%; /* 화면 가득 채우기 */
+    box-sizing: border-box; /* 패딩 포함 */
+}
+
+.nav_ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* 메뉴 간 간격 */
+    padding: 0;
+    margin: 0;
+    align-items: center; /* 텍스트 수직 중앙 정렬 */
+}
+
+.nav_ul li {
+    display: flex;
+    align-items: center; /* 텍스트 수직 중앙 정렬 */
+}
+
+.nav_ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px; /* 글자 크기 줄이기 */
+    font-weight: normal; /* 글자 굵기 조정 */
+    transition: color 0.2s;
+    padding-left: 10px; /* 각 글자에 약간의 여백 추가 */
+}
+
+.nav_ul li a:hover {
+    color: mediumseagreen; /* 호버 효과 */
+}
+
+/* 페이지 메인 컨텐츠 */
+.Container {
+    width: 100vw; /* 너비를 화면 전체로 설정 */
+    margin: 0 auto;
+    box-sizing: border-box; /* 패딩 포함 */
+}
